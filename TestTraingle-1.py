@@ -7,14 +7,15 @@ The primary goal of this file is to demonstrate a simple unittest implementation
 @author: rk
 """
 
-import pytest
+import unittest
+
 
 from Triangle import classifyTriangle
 
 # This code implements the unit test functionality
 # https://docs.python.org/3/library/unittest.html has a nice description of the framework
 
-class TestTriangles(pytest.Test):
+class TestTriangles(unittest):
     # define multiple sets of tests as functions with names that begin
 
     def testRightTriangleA(self): 
@@ -80,6 +81,6 @@ class TestTriangles(pytest.Test):
 
 if __name__ == '__main__':
     print('Running unit tests')
-    pytest.main()
+    unittest.main()
 
 
