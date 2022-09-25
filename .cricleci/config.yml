@@ -16,7 +16,7 @@ jobs:
           name: Run Test
           command: |
             cd cd desktop\ Triangle567HW2a\ Testing\ Legacy\ Problem/
-            pytest --junitxml=test-results/report.xml TestTriangle-1.py
+            pytest --junitxml=test-results/report.xml TestTriangle1.py
       - store_test_results:
           path: test-results
 workflows:
